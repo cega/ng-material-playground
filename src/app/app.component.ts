@@ -1,10 +1,11 @@
 import { Component, VERSION } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  title = 'Angular + Material + Firebase Playground'
+  version = 'Angular ' + VERSION.major;
 }
