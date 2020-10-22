@@ -2,13 +2,35 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 
+import { HttpClientModule } from "@angular/common/http";
+import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
+
 import { MaterialModule } from "./modules/material.module";
 
+import { AppRoutingModule } from "./app-routing.module";
+
+import { DataService } from "./services/data";
+
 import { AppComponent } from "./app.component";
+import { CategoryComponent, QuestionComponent, TagComponent } from "./components";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MaterialModule],
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    CategoryComponent,
+    QuestionComponent,
+    TagComponent
+    ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule,
+    MaterialModule,
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(DataService, { delay: 20 })
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
