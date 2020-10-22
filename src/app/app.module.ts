@@ -7,7 +7,7 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 
-import { MaterialModule } from "./modules/material.module";
+import { MaterialModule } from "./material.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 
