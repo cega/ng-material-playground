@@ -1,6 +1,6 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 
-import data from "../data/db.json";
+import data from "./db.json";
 
 export class DataService implements InMemoryDbService {
   createDb() {
