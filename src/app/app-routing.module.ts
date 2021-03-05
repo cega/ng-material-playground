@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {
     CategoryComponent,
     TagComponent,
-    QuestionComponent
+    QuestionComponent,
+    SidenavMenuComponent
 } from './components/index';
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
     {
         path: 'questions',
         component: QuestionComponent,
+    },
+    {
+        path: 'sidenav',
+        component: SidenavMenuComponent,
     }
 ];
 

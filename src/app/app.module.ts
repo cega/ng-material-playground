@@ -14,14 +14,15 @@ import { AppRoutingModule } from "./app-routing.module";
 import { DataService } from "./services/data";
 
 import { AppComponent } from "./app.component";
-import { CategoryComponent, QuestionComponent, TagComponent } from "./components";
+import { CategoryComponent, QuestionComponent, TagComponent, SidenavMenuComponent } from "./components";
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryComponent,
     QuestionComponent,
-    TagComponent
+    TagComponent,
+    SidenavMenuComponent
     ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+<mat-card>
+  <mat-card-title>
+    Angular Material Menu Demo
+  </mat-card-title>
+  <mat-card-content>
+    <button mat-raised-button color="primary" [matMenuTriggerFor]="menu">
+      Open Menu
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="subMenu">
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voicemail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+  </mat-card-content>
+</mat-card>
+<mat-menu #subMenu="matMenu">
+  <button mat-menu-item>General</button>
+  <button mat-menu-item>Display</button>
+  <button mat-menu-item>Profile˚</button>
+</mat-menu>
+
+<mat-card class="demo-panel">
+  <mat-card-title>
+    Angular Material Sidenav Demo
+  </mat-card-title>
+  <mat-card-content>
+    <mat-sidenav-container class="example-container">
+      <mat-sidenav #sidenav class="example-sidenav">
+        Sidenav content goes here!
+      </mat-sidenav>
+    
+      <div class="example-sidenav-content">
+        <button type="button" md-button (click)="sidenav.open()">
+          Open Sidenav
+        </button>
+      </div>
+    
+    </mat-sidenav-container>
+  </mat-card-content>
+</mat-card>

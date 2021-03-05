@@ -17,6 +17,10 @@
         <mat-icon mat-list-icon>question_answer</mat-icon>
         <span mat-line>Questions</span>
       </a>
+      <a mat-list-item (click)="sidenav.close()" [routerLink]="['/sidenav']">
+        <mat-icon mat-list-icon>box</mat-icon>
+        <span mat-line>Sidenav+Menu</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
 
